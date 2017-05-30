@@ -1,0 +1,52 @@
+INPUTS:
+
+Customer name
+Customer number
+Sales amount
+Tax Code
+
+PROCESSES:
+
+Store Customer Name
+Store Customer Number
+Store Sales Amount
+Store Tax Code
+Calculate Total
+Loop if directed
+
+OUTPUTS:
+
+Prompt User for information 
+Sales Record (including: All user inputs and calculated amounts)
+Ask User to continue
+
+
+PSEUDOCODE:
+
+Initialize Cust_ID to int
+Initialize Cust_Name to string
+Initialize Sale_Amnt to float
+Initialize Tax_Code to string
+
+DISPLAY: "Enter Customer ID"
+DISPLAY: "Enter Customer Name"
+DISPLAY: "Enter Sales Amount"
+DISPLAY: "Enter Tax Code"
+
+CALCULATE Total(
+	IF Tax_Code = "NRM", THEN (Sale_Amnt * 1.06)
+	
+	IF Tax_Code = "NPF", THEN (Sale_Amnt)
+	
+	IF Tax_Code = "BIZ", THEN (Sale_Amnt * 1.045)
+)
+
+DISPLAY:
+	"Customer ID:" Cust_ID
+	"Customer Name:" Cust_Name
+	"Sales Amount:" Sale_Amnt
+	"Tax Code:" Tax_Code
+	"Total Amount Due:" Total
+	"Do you want to enter another record? (Y/N)"	
+
+
