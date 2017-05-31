@@ -45,9 +45,9 @@ public class FridayProject {
 			
 			System.out.println("Do you want to enter another record? (Y/N)");
 			Scanner yesorno = new Scanner(System.in);
-			UserChoice = yesorno.nextLine();
+			UserChoice = yesorno.next();
 			
-		}while(UserChoice == "Y");
+		}while(UserChoice.equals("Y"));
 		
 	}
 
